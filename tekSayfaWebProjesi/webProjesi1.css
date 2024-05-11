@@ -1,0 +1,151 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/15/20/46/background-7855413_960_720.jpg');
+    background-size: cover;   /* Resmi tam ekran yapar */
+    background-repeat: no-repeat; /* Tekrar etmeyi önler */
+    margin: 0;   /* Tarayıcı varsayılan boşluğunu kaldırır */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*öğelerin genişlik ve yüksekliği, bunlara dolgu ve kenar boşlukları eklenmesine rağmen sabit kalır*/
+    outline: none; /*çizgileri kaldırıyorum*/
+    text-decoration: none;  /* alt çizgileri kaldırıyorum */
+    text-transform: capitalize;
+    transition: 0.2s;/*gecikme süresi ekliyorum yumuşak geçiş için*/
+}
+
+
+#logo {
+    display: block;  /* Blok seviyesi, alt alta gelir */
+    width: 70px;
+    height:70px;
+    border-radius: 35px;  /* Daire yapar */ 
+    margin-top: 15px;
+    margin-right: 90px; 
+    margin-left: 25px; /* Sağ marjin */
+    margin-bottom: 20px;  /* Alt boşluk ekler */
+    position: relative;  /* Konumlandırma için */
+}
+
+.ustMenu{
+
+   background-color: rgba(170, 73, 73, 0.504); 
+   display: flex;
+   align-items: center; /*öğeleri yatay eksende ortalar*/
+   justify-content: space-between;/*öğeler arasında eşit mesafe bırakır*/
+  /* padding: 0 7%;
+   margin: 2 rem 7%;*/
+   width: 100%;
+   height: 83px;
+}
+
+.ustMenu .navbar a{
+    margin: 0 1rem;
+    color: #e4e0b4;
+    font-size: large;
+    font-weight: bold;
+}
+.ustMenu .navbar a:hover{
+    background-color: rgba(103, 103, 166, 0.871);
+  
+}
+
+.ustMenu .button button{
+    cursor: pointer;/*imlecin öğenin üzerinde nasıl görüneceğini belirliyorum*/
+    align-items: center; 
+    background-color: transparent;
+    font-size:25px;
+    color: #e4e0b4;
+
+}
+
+.ustMenu .button #searchBar
+{    cursor:text;
+     height:32px; 
+     outline-color: #e4e0b4;
+     background-color: transparent; 
+     padding-top: 8px;
+     color: #faef76;
+}
+
+.anaEkran{
+    display: flex;
+    flex-direction:row;/*yatay sıralama*/
+    justify-content: space-between;/*sağ ekran ve sol ekran arasında boşluk bırakıyorum*/
+    align-items: center;
+    margin-top: 120px; 
+    margin-left: 170px;
+    margin-right: 70px;
+}
+
+.anaEkran #solEkran h2{
+    color: #faccbe;
+    font-weight: bold;
+    font-size: 60px;
+
+
+    
+}
+
+.anaEkran #solEkran h1{
+    color: #e64525;
+    font-weight: bold;
+    font-size: 60px;
+
+    
+}
+.anaEkran #solEkran p {
+    color: #deea8d;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;   
+ 
+}
+
+.anaEkran #sagEkran{
+    width: 350px;
+    height: 350px;
+    background-color: rgba(95, 30, 5, 0.485);
+    display: flex;
+    flex-direction: column;/*dikey sıralama*/
+    justify-content: center;/*dikey ortalama*/
+    align-items: center;
+
+}
+
+.anaEkran #sagEkran input{
+    margin-top: 15px;
+    background-color: #7e513aeb;
+    height:35px;
+    width: 300px;
+    
+}
+
+.anaEkran #sagEkran #girisButonu{
+    height:35px;
+    width: 95px;
+    background-color: #9c1d04ac;
+    cursor: pointer;
+    
+    
+}
+
+.anaEkran #sagEkran .sosyalMedyaIconlari {
+   margin-top: 15px;
+   display:flex;
+    flex-direction:row;/*yatay sıralama*/
+    justify-content:space-between;
+    cursor: pointer;
+
+}
+
+.anaEkran #sagEkran .sosyalMedyaIconlari button{
+   margin-right: 25px;
+   cursor: pointer;
+ 
+ }
